@@ -1008,6 +1008,9 @@ class RichEditableTextState extends State<RichEditableText>
       // Inform the widget that the value of clipboardStatus has changed.
     });
   }
+  
+  @override          
+  void performPrivateCommand(String action, Map<String, dynamic> data) {}
 
   @override
   List<CreamyToolbarItem> get actions => widget.toolbarOptions.actions;
